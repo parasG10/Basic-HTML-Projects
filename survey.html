@@ -1,0 +1,117 @@
+<style>
+#title {
+    text-align: center;
+    color: lemonchiffon;
+    text-decoration-line: underline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    color: lightpink;
+    background-color: darkkhaki;
+    outline-color: darkorange;
+    background-image: url("https://ak.picdn.net/assets/cms/music_subscription_homepage_banner.jpg");
+    
+}
+#description {
+    text-align: center;
+}
+
+#survey-form {
+    background-color: lightpink;
+    color: black;
+    text-align: left;
+    margin: 0 auto;
+	width: 490px;
+	margin: 0 auto;
+	padding: 10px;
+	opacity: 0.9;
+	border-radius: 25px;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: blueviolet;
+    font-weight: bolder;
+}
+
+#checkboxes {
+    margin: 0 auto;
+	width: auto; 
+	text-align:left;
+}
+
+#comment {
+    width: 490px;
+    height: 100px;
+}
+
+.button {
+    width:150px;
+	height: 45px;
+		padding: 4px;
+		color: black;
+		background-color:#c2d6d6;
+		opacity: 1.5;
+		font-weight: bold;
+}
+
+</style>
+
+<html>
+    <head>
+        <h1 id = "title"> Music Survey </h1>
+    </head>
+
+    <body>
+        <p id = "description"> Thank you for visiting this website. Please fill this survey. </p>
+
+        <form id = "survey-form">
+            <label for = "name" id = "name-label"> *Name: </label>
+            <input type = "text" id = "name" required placeholder= "Enter your name here" ><br><br>
+
+            <label for = "email" id = "email-label"> *Email: </label>
+            <input type = "email" id = "email" required placeholder= "Enter your email here" ><br><br>
+
+            <label for = "number" id = "number-label"> *Enter your age here: </label>
+            <input type = "number" id = "number" min = "1" max = "100" placeholder= "Enter your age here" required><br><br>
+
+            <label> What type of music do you like? </label>    
+            <select id = "dropdown" type = "dropdown">
+                <option> Rap </option>
+                <option> Pop </option>
+                <option> Country </option>
+                <option> Rock </option>
+                <option> Classical </option>
+
+            </select><br><br>
+            
+            <div>
+            <label>How often do you listen to music?</label><br>
+                <label><input id="daily" type="radio" name="indoor-outdoor">Daily</label><br>
+                <label><input id="few" type="radio" name="indoor-outdoor">Every few days</label><br>
+                <label><input id="weekly" type="radio" name="indoor-outdoor">Weekly</label><br>
+                <label><input id="monthly" type="radio" name="indoor-outdoor">Monthly</label><br>
+                <label><input id="no" type="radio" name="indoor-outdoor">Don't listen to music</label>
+              
+            </div><br><br>
+
+            <div id = "checkboxes">
+                <label id = "platform">Which platform/s do you listen to music on?</label><br>
+                <label><input type = "checkbox" value = "youtube">Youtube</label><br>
+                <label><input type = "checkbox" value = "apple">Apple Music</label><br>
+                <label><input type = "checkbox" value = "spotify">Spotify</label><br>
+            </div><br><br>
+
+            <label>Do you have any additional comments? </label><br>
+            <textarea id = "comment" rows= "5" columns = "50" placeholder = "Enter your comments here"></textarea><br><br>
+
+
+
+            <button type="submit">Submit</button>
+           
+
+        </form>
+
+
+    </body>
+
+
+</html>
